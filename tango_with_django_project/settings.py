@@ -15,7 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
-STATIC_DIR = os.path.join(BASE_DIR, 'static')
+STATIC_DIR = os.path.join(BASE_DIR,'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_DIRS = [STATIC_DIR, ]
@@ -25,7 +25,7 @@ STATICFILES_DIRS = [STATIC_DIR, ]
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'dr*-n6(kyv6r&*g&)1ld#mf1b!p&d#k)2iyj!xtbpcdggru8y%'
+SECRET_KEY = 'hcuqe$uzfxksw1!0da-$=67yuyk$57bljzuf$yycwb5ojgm(&v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rango'
+    'rango',
 ]
 
 MIDDLEWARE = [
@@ -68,7 +68,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.context_processors.media'
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -126,6 +126,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
+LOGIN_URL = '/rango/login/'
