@@ -20,6 +20,7 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_DIRS = [STATIC_DIR, ]
 
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
